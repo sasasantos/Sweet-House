@@ -7,7 +7,6 @@ export default defineConfig({
     allowedHosts: ['5173-iu70zetq0zhmwe7bgc4u4-dbb78286.manus.computer']
   },
   build: {
-    outDir: 'dist',
-    minify: 'terser'
+    outDir: 'dist'
   }
 })
