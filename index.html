@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="P.S. Sweet House - Doces artesanais feitos com amor e qualidade. Conheça nossos produtos especiais e encomende online.">
+    <meta name="keywords" content="doces, bolos, cupcakes, artesanal, encomenda">
+    <meta name="author" content="P.S. Sweet House">
+    
+    <title>P.S. Sweet House - Loja de Doces Artesanais</title>
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="/src/styles.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ============================================
+         HEADER E NAVEGAÇÃO
+         ============================================ -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <!-- Logo -->
+                <div class="logo-section">
+                    <a href="#" class="logo-link">
+                        <img src="/images/logo.png" alt="P.S. Sweet House Logo" class="logo">
+                    </a>
+                </div>
+
+                <!-- Menu Principal -->
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#identidade" class="nav-link">Identidade</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#encomendas" class="nav-link">Encomendas</a></li>
+                    <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li><a href="#provas-sociais" class="nav-link">Provas Sociais</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+
+                <!-- Botões de Ação -->
+                <div class="nav-actions">
+                    <button class="cart-btn" id="cartBtn">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+ <section class="hero" id="hero">
+    <div class="hero-container">
+
+        <!-- Coluna da imagem -->
+        <div class="hero-image">
+            <img src="/images/fundo.jpg" alt="Fundo da loja P.S. Sweet House">
+        </div>
+
+        <!-- Coluna do texto -->
+        <div class="hero-text">
+            <h1 class="hero-title">Bem-vindo à P.S. Sweet House</h1>
+            <p class="hero-subtitle">Doces artesanais feitos com amor, qualidade e os melhores ingredientes</p>
+
+            <div class="hero-buttons">
+                <a href="#encomendas" class="btn btn-primary">Faça sua Encomenda</a>
+                <a href="#galeria" class="btn btn-secondary">Ver Galeria</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Mantive sua decoração original -->
+    <div class="hero-decoration"></div>
+</section>
+
+    <!-- ============================================
+         SEÇÃO IDENTIDADE
+         ============================================ -->
+    <section id="identidade" class="section identidade">
+
+
+        
+        <div class="container">
+            <div class="section-header">
+                <br>
+                <h2 class="section-title">Nossa Identidade</h2>
+                <p class="section-subtitle">Conheça a história e os valores da P.S. Sweet House</p>
+            </div>
+
+            <div class="identidade-content">
+                <!-- Texto da Identidade -->
+                <div class="identidade-text">
+                    <h3>Quem Somos</h3>
+                    <p>A P.S. Sweet House é mais que uma loja de doces. Somos um espaço dedicado a criar momentos doces e memoráveis para você e sua família. Cada produto é cuidadosamente preparado com ingredientes selecionados e muito carinho.</p>
+                    <p>Nossa missão é levar felicidade através do sabor, combinando tradição com inovação em cada criação. Acreditamos que um bom doce tem o poder de transformar dias comuns em momentos especiais.</p>
+                    <h3>Nossa Missão</h3>
+                    <p>Produzir doces artesanais de qualidade premium, utilizando ingredientes naturais e técnicas tradicionais, proporcionando experiências sensoriais únicas aos nossos clientes.</p>
+                </div>
+
+                <!-- Cards de Valores -->
+                <div class="identidade-values">
+                    <div class="value-card">
+                        <div class="value-icon">✨</div>
+                        <h3>Qualidade</h3>
+                        <p>Ingredientes premium selecionados com rigor</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">❤️</div>
+                        <h3>Amor</h3>
+                        <p>Cada doce feito com dedicação e paixão</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🚀</div>
+                        <h3>Inovação</h3>
+                        <p>Sabores únicos e criações exclusivas</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🌍</div>
+                        <h3>Sustentabilidade</h3>
+                        <p>Compromisso com o meio ambiente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO MENU COM FILTROS
+         ============================================ -->
+    <section id="menu" class="section menu">
+        <div class="container">
+            <div class="section-header">
+                <br>
+                <h2 class="section-title">Nosso Menu</h2>
+                <p class="section-subtitle">Explore nossa seleção de doces deliciosos</p>
+            </div>
+
+            <!-- Filtros de Categoria -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="cupcakes">Cupcakes</button>
+                <button class="filter-btn" data-filter="bolos">Bolos</button>
+                <button class="filter-btn" data-filter="cookies">Cookies</button>
+                <button class="filter-btn" data-filter="chocolates">Chocolates</button>
+                <button class="filter-btn" data-filter="docinhos">Docinhos</button>
+            </div>
+
+            <!-- Grid de Produtos -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Cupcakes -->
+                <div class="menu-item" data-category="cupcakes">
+                    <div>
+                        <img src="/images/chocolate.jfif" alt="Cupcake de Chocolate" class="rounded-img">
+                    </div>
+                    <br>
+                    <h3>Cupcakes de Chocolate</h3>
+                    <p>Cupcakes macios com cobertura de chocolate belga</p>
+                    <div class="menu-price">R$ 8,90</div>
+                    <button class="btn btn-small btn-add-cart" data-product="Cupcake Chocolate">Adicionar</button>
+                </div>
+
+                <div class="menu-item" data-category="cupcakes">
+                    <div>
+                        <img src="/images/morango.jfif" alt="Cupcake de Morango" class="rounded-img">
+                    </div>
+                    <br>
+                    <h3>Cupcakes de Morango</h3>
+                    <p>Cupcakes com calda de morango fresco</p>
+                    <div class="menu-price">R$ 9,50</div>
+                    <button class="btn btn-small btn-add-cart" data-product="Cupcake Morango">Adicionar</button>
+                </div>
+
+                <div class="menu-item" data-category="cupcakes">
+                    <div>
+                        <img src="/images/baunilha.jfif" alt="Cupcake de Baunilha" class="rounded-img">
+                    </div>
+                    <br>
+                    <h3>Cupcakes de Baunilha</h3>
+                    <p>Clássico cupcake com cobertura de baunilha</p>
+                    <div class="menu-price">R$ 7,90</div>
+                    <button class="btn btn-small btn-add-cart" data-product="Cupcake Baunilha">Adicionar</button>
+                </div>
+
+                <!-- Bolos -->
+                <div class="menu-item" data-category="bolos">
+                    <div>
+                        <img src="/images/bolo-red-velvet.jpg" alt="Bolo Red Velvet" class="rounded-img">
+                    </div>
+                    <br>
+                    <h3>Bolo Red Velvet</h3>
+                    <p>Bolo artesanal com cobertura de cream cheese</p>
+                    <div class="menu-price">R$ 45,00</div>
+                    <button class="btn btn-small btn-add-cart" data-product="Bolo Red Velvet">Adicionar</button>
+                </div>
+
+                <div class="menu-item" data-category="bolos">
+                   <div>
+                        <img src="/images/bolo-chocolate.jfif" alt="Bolo de Chocolate" class="rounded-img">
+                    </div>
+                    <br>
+                    <h3>Bolo de Chocolate</h3>
+                    <p>Bolo de chocolate com ganache cremoso</p>
+                    <div class="menu-price">R$ 40,00</div>
+                    <button class="btn btn-small btn-add-cart" data-product="Bolo Chocolate">Adicionar</button>
+                </div>
+
+                <div class="menu-item" data-category="bolos">
+                    <div>
+                        <img src="/images/bolo-maracuja.jfif" alt="Bolo de Maracuja" class="rounded-img">
+                    </div>
+                    <br>
+                    <h3>Bolo de Maracuja</h3>
+                    <p>Bolo de maracuja com cobertura de chocolate</p>
+                    <div class="menu-price">R$ 38,00</div>
+                    <button class="btn btn-small btn-add-cart" data-product="Bolo Maracuja">Adicionar</button>
+                </div>
+
+                <!-- Cookies -->
+                <div class="menu-item" data-category="cookies">
+                    <div>
+                        <img src="/images/cookie-chocolate.jpg" alt="Cookie de Chocolate" class="rounded-img">
+                    </div>
+                    <br>
+                    <h3>Cookies de Chocolate</h3>
+                    <p>Cookies crocantes com gotas de chocolate</p>
+                    <div class="menu-price">R$ 12,00</div>
+                    <button class="btn btn-small btn-add-cart" data-product="Cookie Chocolate">Adicionar</button>
+                </div>
+
+                <div class="menu-item" data-category="cookies">
+                    <div>
+                        <img src="/images/cookie-aveia-mel.jfif" alt="Cookie de Aveia" class="rounded-img">
+                    </div>
+                    <br>
+                    <h3>Cookies de Aveia</h3>
+                    <p>Cookies integrais com aveia e mel</p>
+                    <div class="menu-price">R$ 10,00</div>
+                    <button class="btn btn-small btn-add-cart" data-product="Cookie Aveia">Adicionar</button>
+                </div>
+
+                <!-- Chocolates -->
+                <div class="menu-item" data-category="chocolates">
+                     <div>
+                        <img src="/images/trufas-artesanais.jpg" alt="Trufas Artesanais" class="rounded-img">
+                    </div>
+                    <br>
+                    <h3>Trufas Artesanais</h3>
+                    <p>Trufas com recheios sofisticados</p>
+                    <div class="menu-price">R$ 25,00</div>
+                    <button class="btn btn-small btn-add-cart" data-product="Bombom">Adicionar</button>
+                </div>
+
+                <div class="menu-item" data-category="chocolates">
+                    <div>
+                        <img src="/images/coxinha doce.jfif" alt="Coxinha Doce" class="rounded-img">
+                    </div>
+                    <br>
+                    <h3>Coxinha Doce</h3>
+                    <p>Coxinha doce com recheio cremoso</p>
+                    <div class="menu-price">R$ 30,00</div>
+                    <button class="btn btn-small btn-add-cart" data-product="Bombom">Adicionar</button>
+                </div>
+
+                <!-- Docinhos -->
+                <div class="menu-item" data-category="docinhos">
+                    <div>
+                        <img src="/images/brigadeiro.jfif" alt="Brigadeiro Gourmet" class="rounded-img">
+                    </div>
+                    <br>
+                    <h3>Brigadeiro Gourmet</h3>
+                    <p>Brigadeiro feito com chocolate premium</p>
+                    <div class="menu-price">R$ 3,50</div>
+                    <button class="btn btn-small btn-add-cart" data-product="Brigadeiro">Adicionar</button>
+                </div>
+
+                <div class="menu-item" data-category="docinhos">
+                    <div>
+                        <img src="/images/beijinho.jfif" alt="Beijinho de Coco" class="rounded-img">
+                    </div>
+                    <br>
+                    <h3>Beijinho de Coco</h3>
+                    <p>Beijinho tradicional com coco ralado</p>
+                    <div class="menu-price">R$ 2,50</div>
+                    <button class="btn btn-small btn-add-cart" data-product="Beijinho">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO ENCOMENDAS
+         ============================================ -->
+    <section id="encomendas" class="section encomendas">
+        <div class="container">
+            <div class="section-header">
+                <br>
+                <h2 class="section-title">Como Fazer uma Encomenda</h2>
+                <p class="section-subtitle">Processo simples em 4 passos</p>
+            </div>
+
+            <div class="encomendas-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Escolha</h3>
+                    <p>Navegue pelo nosso menu e escolha seus doces favoritos</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Personalize</h3>
+                    <p>Customize seu pedido conforme suas preferências</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Confirme</h3>
+                    <p>Entre em contato conosco para confirmar data e detalhes</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Receba</h3>
+                    <p>Receba seus doces frescos e deliciosos</p>
+                </div>
+            </div>
+
+            <div class="encomendas-info">
+                <div class="info-grid">
+                    <div class="info-box">
+                        <h4>📅 Prazo de Entrega</h4>
+                        <p>3 a 7 dias úteis (conforme disponibilidade)</p>
+                    </div>
+                    <div class="info-box">
+                        <h4>💳 Formas de Pagamento</h4>
+                        <p>PIX, Cartão de Crédito, Transferência Bancária</p>
+                    </div>
+                    <div class="info-box">
+                        <h4>🚚 Entrega</h4>
+                        <p>Retirada na loja ou entrega em domicílio</p>
+                    </div>
+                    <div class="info-box">
+                        <h4>📦 Embalagem</h4>
+                        <p>Embalagem eco-friendly e segura</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO DIFERENCIAIS
+         ============================================ -->
+    <section id="diferenciais" class="section diferenciais">
+        <div class="container">
+            <div class="section-header">
+                <br>
+                <h2 class="section-title">Nossos Diferenciais</h2>
+                <p class="section-subtitle">Por que escolher a P.S. Sweet House</p>
+            </div>
+
+            <div class="diferenciais-grid">
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">🌿</div>
+                    <h3>Ingredientes Frescos</h3>
+                    <p>Utilizamos apenas ingredientes de primeira qualidade, sempre frescos e selecionados com cuidado.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">⚗️</div>
+                    <h3>Sem Conservantes</h3>
+                    <p>Nossos doces são preparados sem conservantes artificiais, mantendo a naturalidade e o sabor autêntico.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">🥗</div>
+                    <h3>Opções Especiais</h3>
+                    <p>Oferecemos opções para dietas especiais: sem glúten, sem lactose, vegana e com redução de açúcar.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">♻️</div>
+                    <h3>Embalagem Sustentável</h3>
+                    <p>Nossas embalagens são eco-friendly e reutilizáveis, respeitando o meio ambiente.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">👥</div>
+                    <h3>Atendimento Personalizado</h3>
+                    <p>Cada cliente é especial. Oferecemos consultoria para criar o doce perfeito para sua ocasião.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">⚡</div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Processamos pedidos rapidamente e entregamos com segurança para que você receba tudo perfeito.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO GALERIA COM LIGHTBOX
+         ============================================ -->
+    <section id="galeria" class="section galeria">
+        <div class="container">
+            <div class="section-header">
+                <br>
+                <h2 class="section-title">Galeria</h2>
+                <p class="section-subtitle">Veja nossos trabalhos mais recentes</p>
+            </div>
+
+            <div class="galeria-grid" id="galeriaGrid">
+                <div class="galeria-item" data-lightbox="galeria">
+                    <div>
+                     <img src="/images/chocolate.jpg" alt="Cupcakes de Chocolate" class="galeria-placeholder">
+                    </div>
+                    <p>Cupcakes de Chocolate</p>
+                </div>
+                <div class="galeria-item" data-lightbox="galeria">
+                    <div>
+                     <img src="/images/bolo-red-velvet.jpg" alt="Bolo Red Velvet" class="galeria-placeholder">
+                    </div>
+                    <p>Bolo Red Velvet</p>
+                </div>
+                <div class="galeria-item" data-lightbox="galeria">
+                    <div>
+                     <img src="/images/cookie-chocolate.jpg" alt="Cookies de Chocolate" class="galeria-placeholder">
+                    </div>
+                    <p>Cookies de Chocolate</p>
+                </div>
+                <div class="galeria-item" data-lightbox="galeria">
+                    <div>
+                     <img src="/images/trufas-artesanais.jpg" alt="Trufas Artesanais" class="galeria-placeholder">
+                    </div>
+                    <p>Trufas Artesanais</p>
+                </div>
+                <div class="galeria-item" data-lightbox="galeria">
+                    <div>
+                     <img src="/images/bolos-personalizados.jpg" alt="Bolo Personalizado" class="galeria-placeholder">
+                    </div>
+                    <p>Bolo Personalizado</p>
+                </div>
+                <div class="galeria-item" data-lightbox="galeria">
+                    <div>
+                     <img src="/images/doces-personalizados.jpg" alt="Docinhos Variados" class="galeria-placeholder">
+                    </div>
+                    <p>Docinhos Variados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO PROVAS SOCIAIS / AVALIAÇÕES
+         ============================================ -->
+    <section id="provas-sociais" class="section provas-sociais">
+        <div class="container">
+            <div class="section-header">
+                <br>
+                <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+                <p class="section-subtitle">Avaliações e depoimentos reais</p>
+            </div>
+
+            <!-- Slider de Depoimentos -->
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Os doces da P.S. Sweet House são simplesmente incríveis! Qualidade impecável e sabor inesquecível."</p>
+                        <p class="author">— Maria Silva</p>
+                        <p class="date">Há 2 semanas</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Encomendei um bolo personalizado e ficou perfeito! Superou minhas expectativas. Muito bom mesmo!"</p>
+                        <p class="author">— João Santos</p>
+                        <p class="date">Há 1 mês</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Atendimento atencioso e doces deliciosos. Já é minha loja preferida para presentear amigos!"</p>
+                        <p class="author">— Ana Costa</p>
+                        <p class="date">Há 3 semanas</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Que experiência maravilhosa! Os cupcakes são frescos e as coberturas são criativas. Recomendo!"</p>
+                        <p class="author">— Pedro Oliveira</p>
+                        <p class="date">Há 1 semana</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="social-links">
+                <p>Siga-nos nas redes sociais:</p>
+                <div class="social-icons">
+                    <a href="#instagram" class="social-icon">📱 Instagram</a>
+                    <a href="#facebook" class="social-icon">👍 Facebook</a>
+                    <a href="#twitter" class="social-icon">🐦 Twitter</a>
+                    <a href="#contato" class="social-icon">💬 WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO BLOG
+         ============================================ -->
+    <section id="blog" class="section blog">
+        <div class="container">
+            <div class="section-header">
+                <br>
+                <h2 class="section-title">Blog</h2>
+                <p class="section-subtitle">Dicas, receitas e histórias sobre doces</p>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div>
+                        <img src="/images/cupcake.jpg" alt="Cupcakes Perfeitos" class="blog-image">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Receita</span>
+                        <h3>Como Fazer Cupcakes Perfeitos em Casa</h3>
+                        <p>Aprenda os segredos para fazer cupcakes macios e deliciosos na sua cozinha.</p>
+                        <div class="blog-meta">
+                            <span>15 de Nov</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                        <a href="#" class="read-more">Ler Mais →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div>
+                        <img src="/images/doce-artesanal.jpg" alt="Armazenamento Correto de Doces Artesanais" class="blog-image">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Dica</span>
+                        <h3>Armazenamento Correto de Doces Artesanais</h3>
+                        <p>Saiba como conservar seus doces frescos por mais tempo.</p>
+                        <div class="blog-meta">
+                            <span>12 de Nov</span>
+                            <span>3 min de leitura</span>
+                        </div>
+                        <a href="#" class="read-more">Ler Mais →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div>
+                        <img src="/images/identidade.jpg" alt="A Origem da P.S. Sweet House" class="blog-image">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">História</span>
+                        <h3>A Origem da P.S. Sweet House</h3>
+                        <p>Conheça a história de como tudo começou e nossa jornada até aqui.</p>
+                        <div class="blog-meta">
+                            <span>10 de Nov</span>
+                            <span>7 min de leitura</span>
+                        </div>
+                        <a href="#" class="read-more">Ler Mais →</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog-newsletter">
+                <h3>Receba Nossas Novidades</h3>
+                <p>Inscreva-se na nossa newsletter e receba dicas exclusivas</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Seu email" required>
+                    <button type="submit" class="btn btn-primary">Inscrever</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO FAQ (PERGUNTAS FREQUENTES)
+         ============================================ -->
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="section-header">
+                <br>
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <p class="section-subtitle">Encontre respostas para suas dúvidas</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Qual é o prazo de entrega?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <br>
+                        <p>O prazo de entrega é de 3 a 7 dias úteis, dependendo da disponibilidade e complexidade do pedido. Pedidos personalizados podem levar um pouco mais.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Vocês fazem entregas em domicílio?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <br>
+                        <p>Sim! Realizamos entregas em domicílio. O valor da taxa varia conforme a localização. Consulte-nos para mais informações.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Vocês trabalham com dietas especiais?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <br>
+                        <p>Sim! Oferecemos opções sem glúten, sem lactose, vegana e com redução de açúcar. Entre em contato para conhecer as possibilidades.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como faço para personalizar meu pedido?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <br>
+                        <p>Você pode entrar em contato conosco via WhatsApp, telefone ou email para discutir suas ideias. Adoramos criar bolos e doces personalizados!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Qual é o valor mínimo para encomenda?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <br>
+                        <p>Não temos valor mínimo obrigatório, mas recomendamos encomendas a partir de R$ 50,00 para aproveitar melhor a entrega.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Vocês aceitam qual forma de pagamento?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <br>
+                        <p>Aceitamos PIX, Cartão de Crédito e Transferência Bancária. Todas as transações são seguras e criptografadas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO CONTATO
+         ============================================ -->
+    <section id="contato" class="section contato">
+        <div class="container">
+            <div class="section-header">
+                <br>
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Estamos aqui para ajudar</p>
+            </div>
+
+            <div class="contato-content">
+                <!-- Informações de Contato -->
+                <div class="contato-info">
+                    <div class="info-item">
+                        <h3>📍 Localização</h3>
+                        <p>Rua dos Doces, 123<br>São Paulo, SP - 01234-567</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📞 Telefone</h3>
+                        <p>(11) 98765-4321</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📧 Email</h3>
+                        <p>contato@pssweethouse.com.br</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>💬 WhatsApp</h3>
+                        <p>(11) 98765-4321</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>🕐 Horário</h3>
+                        <p>Seg-Sex: 9h às 18h<br>Sábado: 10h às 16h<br>Domingo: Fechado</p>
+                    </div>
+                </div>
+
+                <!-- Formulário de Contato -->
+                <form class="contato-form" id="contatoForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Seu Telefone">
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Selecione o Assunto</option>
+                            <option value="encomenda">Encomenda</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CARRINHO DE COMPRAS (MODAL)
+         ============================================ -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Seu Carrinho</h2>
+                <button class="close-btn" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Seu carrinho está vazio</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total:</strong>
+                    <strong id="cartTotal">R$ 0,00</strong>
+                </div>
+                <button class="btn btn-primary btn-block">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         CHAT FLUTUANTE
+    <!-- ============================================ -->
+    <div class="chat-widget" id="chatWidget">
+    <div class="chat-header" id="chatHeader">
+        <span>💬 Ajuda</span>
+        <button class="chat-toggle" id="chatToggle">−</button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+        <div class="chat-message bot">
+            <p>Olá! Bem-vindo à P.S. Sweet House. Como posso ajudá-lo?</p>
+        </div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" placeholder="Digite sua mensagem..." id="chatInput">
+        <button id="chatSend">Enviar</button>
+    </div>
+    </div>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>P.S. Sweet House</h4>
+                    <p>Doces artesanais feitos com amor e qualidade.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                        <li><a href="#instagram">Instagram</a></li>
+                        <li><a href="#facebook">Facebook</a></li>
+                        <li><a href="#contato">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 P.S. Sweet House. Todos os direitos reservados.</p>
+                <p>Feito com ❤️ para os amantes de doces</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/src/main.js"></script>
+</body>
+</html>
