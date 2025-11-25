@@ -107,7 +107,7 @@ function closeCart() {
 /**
  * Adicionar produto ao carrinho
  */
-function addToCart(productName, price = 10) {
+function addToCart(productName, price) {
     const existingItem = state.cart.find(item => item.name === productName);
     
     if (existingItem) {
@@ -173,7 +173,11 @@ closeCartBtn?.addEventListener('click', closeCart);
 addToCartBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         const productName = btn.getAttribute('data-product');
-        addToCart(productName);
+        // 1. LER o preço do novo atributo 'data-price' (que você adicionará no HTML)
+        const productPrice = parseFloat(btn.getAttribute('data-price')); 
+        
+        // 2. PASSAR o preço real (productPrice) para a função addToCart
+        addToCart(productName, productPrice); 
     });
 });
 
