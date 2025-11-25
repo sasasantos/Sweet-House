@@ -1459,6 +1459,13 @@ img {
    10. RESPONSIVO
    ============================================ */
 
+@media (max-width: 992px) {
+    /* Container (Melhora o espaçamento em telas maiores que 768px mas menores que 1200px) */
+    .container {
+        padding: 0 var(--spacing-xl);
+    }
+}
+
 @media (max-width: 768px) {
     /* Header */
     .hamburger {
@@ -1481,39 +1488,67 @@ img {
     .nav-menu.active {
         display: flex;
     }
+    
+    /* Hero Section (Regras consolidadas do 820px e ajustes gerais) */
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--spacing-2xl); /* Ajuste de espaçamento */
+        padding: var(--spacing-2xl) var(--spacing-lg); 
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
 
-    /* Hero */
     .hero-title {
         font-size: var(--font-size-2xl);
     }
 
     .hero-buttons {
-        flex-direction: column;
+        justify-content: center; /* Centraliza botões */
+        flex-wrap: wrap;
     }
-
+    
     /* Seções */
     .section-title {
         font-size: var(--font-size-2xl);
     }
 
-    .identidade-content {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-2xl);
-    }
-
+    /* Grids: Transição para 1 coluna */
+    .identidade-content,
     .contato-content {
         grid-template-columns: 1fr;
         gap: var(--spacing-2xl);
     }
+    
+    /* Footer: 1 coluna em tablets */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
 
-    /* Chat */
+    /* Modais e Widgets */
+    .cart-modal {
+        /* Para telas menores que 768px, o carrinho pode ser mais responsivo */
+        justify-content: center;
+    }
+    
+    .cart-content {
+        width: 90%;
+        max-width: 400px;
+        height: 90vh; /* Ocupa a maior parte da tela, mas não 100% */
+        border-radius: var(--radius-lg);
+        margin: var(--spacing-xl);
+    }
+}
+
+@media (max-width: 768px) {
+    /* ... código anterior para Header, Hero, etc. ... */
+
+    /* Chat: Oculta o widget de chat em telas menores que 768px */
     .chat-widget {
-        width: 100%;
-        max-width: 100%;
-        height: 100vh;
-        border-radius: 0;
-        bottom: 0;
-        right: 0;
+        display: none !important; /* Força a ocultação */
     }
 
     .newsletter-form {
@@ -1522,7 +1557,7 @@ img {
 }
 
 @media (max-width: 480px) {
-    /* Espaçamento */
+    /* Espaçamento e Tipografia mais ajustados */
     .section {
         padding: var(--spacing-2xl) var(--spacing-md);
     }
@@ -1534,7 +1569,7 @@ img {
     .logo {
         height: 45px;
     }
-
+    
     /* Hero */
     .hero {
         padding: var(--spacing-2xl) var(--spacing-md);
@@ -1555,14 +1590,11 @@ img {
         font-size: var(--font-size-sm);
     }
 
-    /* Grids */
+    /* Grids: Garantindo 1 coluna para todos */
     .menu-grid,
     .diferenciais-grid,
     .galeria-grid,
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-    }
-
+    .testimonials-grid,
     .encomendas-steps {
         grid-template-columns: 1fr;
     }
@@ -1581,9 +1613,4 @@ img {
         padding: var(--spacing-lg);
     }
 
-    /* Footer */
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-lg);
-    }
 }
