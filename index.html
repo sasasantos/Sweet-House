@@ -701,30 +701,47 @@
                 </div>
 
                 <!-- Formulário de Contato -->
-                <form class="contato-form" id="contatoForm">
+                <form class="contato-form" id="contatoForm" action="https://formsubmit.co/ajax/sabrina.s.oliveira13@aluno.senai.br" method="POST">
+    
+                    <input type="hidden" name="_recipient" value="sabrina.s.oliveira13@aluno.senai.br">
+                    
                     <div class="form-group">
-                        <input type="text" placeholder="Seu Nome" required>
+                        <input type="text" name="Nome" placeholder="Seu Nome" required>
                     </div>
+                    
                     <div class="form-group">
-                        <input type="email" placeholder="Seu Email" required>
+                        <input type="email" name="email" placeholder="Seu Email" required>
                     </div>
+                    
                     <div class="form-group">
-                        <input type="tel" placeholder="Seu Telefone">
+                        <input type="tel" name="Telefone" placeholder="Seu Telefone">
                     </div>
+                    
                     <div class="form-group">
-                        <select required>
+                        <select name="Assunto" required>
                             <option value="">Selecione o Assunto</option>
-                            <option value="encomenda">Encomenda</option>
-                            <option value="duvida">Dúvida</option>
-                            <option value="reclamacao">Reclamação</option>
-                            <option value="outro">Outro</option>
+                            <option value="Encomenda">Encomenda</option>
+                            <option value="Duvida">Dúvida</option>
+                            <option value="Reclamacao">Reclamação</option>
+                            <option value="Outro">Outro</option>
                         </select>
                     </div>
+                    
                     <div class="form-group">
-                        <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                        <textarea name="Mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
                     </div>
+
+                    <input type="hidden" name="_subject" value="Nova Mensagem do Site!">
+
+                    <input type="hidden" name="_next" value="https://seusite.com/pagina-de-agradecimento.html">
+
+                    <input type="text" name="_honey" style="display:none">
+
+                    <input type="hidden" name="_captcha" value="false">
+
                     <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                 </form>
+
             </div>
         </div>
     </section>
