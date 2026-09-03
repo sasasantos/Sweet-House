@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light only">
+  <meta name="theme-color" content="#fffbf1">
+  <meta name="description" content="Sweet House — confeitaria artesanal premium para celebrar momentos especiais." />
+  <meta name="author" content="P.S. Sweet House" />
+  <title>Sweet House — Confeitaria artesanal premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+
+<body>
+  <header class="site-header" id="header">
+    <nav class="navbar" aria-label="Navegação principal">
+      <a class="brand" href="#hero" aria-label="Sweet House — início">
+        <img src="/images/logo.png" alt="Sweet House" class="logo">
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a class="nav-link" href="#identidade">A casa</a></li>
+        <li><a class="nav-link" href="#menu">Cardápio</a></li>
+        <li><a class="nav-link" href="#encomendas">Encomendas</a></li>
+        <li><a class="nav-link" href="#galeria">Inspirações</a></li>
+        <li><a class="nav-link" href="#faq">Dúvidas</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="nav-order" href="#contato">Fale conosco <span>↗</span></a>
+        <button class="cart-btn" id="cartBtn" aria-label="Abrir carrinho"><span class="cart-bag">♡</span><span
+            class="cart-count" id="cartCount">0</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-orb hero-orb-one"></div>
+      <div class="hero-orb hero-orb-two"></div>
+      <div class="hero-container">
+        <div class="hero-text reveal">
+          <p class="eyebrow"><span></span> confeitaria artesanal desde 2020</p>
+          <h1>Feito para<br /><i>adoçar</i> o seu dia.</h1>
+          <p class="hero-subtitle">Doces autorais, ingredientes escolhidos e um cuidado que você sente em cada detalhe.
+          </p>
+          <div class="hero-buttons"><a href="#menu" class="btn btn-primary">Conheça o cardápio <span>↗</span></a><a
+              href="#identidade" class="text-link">Nossa história <span>→</span></a></div>
+          <div class="hero-note"><span class="note-stars">★★★★★</span><span>Um pedacinho de felicidade, feito à
+              mão.</span></div>
+        </div>
+        <div class="hero-visual reveal reveal-delay">
+          <div class="hero-frame"><img src="/images/bolo-red-velvet.jpg"
+              alt="Bolo red velvet artesanal da Sweet House" /></div>
+          <div class="hero-sticker"><span>feito com</span><strong>amor</strong><span>em cada fatia</span></div>
+          <div class="hero-caption"><span>01</span><span>coleção<br />red velvet</span></div>
+        </div>
+      </div>
+      <a href="#identidade" class="scroll-cue" aria-label="Rolar para conhecer a Sweet House"><span>scroll para
+          explorar</span><b>↓</b></a>
+    </section>
+
+    <section class="section identity-section" id="identidade">
+      <div class="container identity-layout">
+        <div class="section-intro reveal">
+          <p class="eyebrow"><span></span> a essência da sweet house</p>
+          <h2>Do forno para<br /><i>o coração.</i></h2>
+        </div>
+        <div class="identity-copy reveal reveal-delay">
+          <p class="lead">A Sweet House nasceu do desejo de transformar receitas em memórias. Aqui, cada doce é
+            preparado em pequenos lotes, com ingredientes selecionados e um olhar atento para o que torna cada
+            celebração única.</p>
+          <p>Mais do que confeitaria, criamos pausas gostosas, presentes inesquecíveis e mesas que contam histórias.</p>
+          <a class="text-link" href="#encomendas">Conheça nosso jeito de fazer <span>→</span></a>
+        </div>
+      </div>
+      <div class="container value-strip">
+        <div class="value-card reveal"><span class="value-number">01</span>
+          <h3>Feito à mão</h3>
+          <p>Texturas e sabores preparados com calma.</p>
+        </div>
+        <div class="value-card reveal reveal-delay"><span class="value-number">02</span>
+          <h3>Ingredientes nobres</h3>
+          <p>Escolhas que fazem a diferença no sabor.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-2"><span class="value-number">03</span>
+          <h3>Para celebrar</h3>
+          <p>Criações que deixam o momento especial.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> delicadezas da casa</p>
+            <h2>Escolhas que<br /><i>encantam.</i></h2>
+          </div>
+          <p>Do clássico ao autoral, nosso cardápio foi pensado para presentear, celebrar ou simplesmente tornar hoje um
+            pouco mais doce.</p>
+        </div>
+        <div class="menu-filters" role="group" aria-label="Filtrar cardápio"><button class="filter-btn active"
+            data-filter="todos">Tudo</button><button class="filter-btn" data-filter="cupcakes">Cupcakes</button><button
+            class="filter-btn" data-filter="bolos">Bolos</button><button class="filter-btn"
+            data-filter="cookies">Cookies</button><button class="filter-btn"
+            data-filter="chocolates">Chocolates</button><button class="filter-btn"
+            data-filter="docinhos">Docinhos</button></div>
+        <div class="menu-grid" id="menuGrid">
+          <article class="menu-item" data-category="cupcakes">
+            <div class="product-image"><img src="/images/chocolate.jfif" alt="Cupcake de Chocolate" /></div>
+            <div class="product-info"><span class="product-category">Cupcakes</span>
+              <h3>Cupcake de Chocolate</h3>
+              <p>Massa úmida com cobertura cremosa de chocolate belga.</p>
+              <div class="product-bottom"><strong>R$ 8,90</strong><button class="btn btn-add-cart"
+                  data-product="Cupcake de Chocolate" data-price="8.90">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="cupcakes">
+            <div class="product-image"><img src="/images/morango.jfif" alt="Cupcake de Morango" /></div>
+            <div class="product-info"><span class="product-category">Cupcakes</span>
+              <h3>Cupcake de Morango</h3>
+              <p>Morangos frescos, creme leve e uma calda delicada.</p>
+              <div class="product-bottom"><strong>R$ 9,50</strong><button class="btn btn-add-cart"
+                  data-product="Cupcake de Morango" data-price="9.50">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="cupcakes">
+            <div class="product-image"><img src="/images/baunilha.jfif" alt="Cupcake de Baunilha" /></div>
+            <div class="product-info"><span class="product-category">Cupcakes</span>
+              <h3>Cupcake de Baunilha</h3>
+              <p>Clássico, macio e perfumado com cobertura de baunilha.</p>
+              <div class="product-bottom"><strong>R$ 7,90</strong><button class="btn btn-add-cart"
+                  data-product="Cupcake de Baunilha" data-price="7.90">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="cupcakes">
+            <div class="product-image"><img src="/images/cupcake.jpg" alt="Cupcake da Estação" /></div>
+            <div class="product-info"><span class="product-category">Cupcakes</span>
+              <h3>Cupcake da Estação</h3>
+              <p>Uma criação especial com frutas e creme da estação.</p>
+              <div class="product-bottom"><strong>R$ 10,50</strong><button class="btn btn-add-cart"
+                  data-product="Cupcake da Estação" data-price="10.50">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="bolos">
+            <div class="product-image"><img src="/images/bolo-red-velvet.jpg" alt="Red Velvet" /></div>
+            <div class="product-info"><span class="product-category">Bolos</span>
+              <h3>Red Velvet</h3>
+              <p>Camadas macias, cream cheese e equilíbrio entre doce e delicado.</p>
+              <div class="product-bottom"><strong>R$ 45,00</strong><button class="btn btn-add-cart"
+                  data-product="Red Velvet" data-price="45.00">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="bolos">
+            <div class="product-image"><img src="/images/bolo-chocolate.jfif" alt="Chocolate Intenso" /></div>
+            <div class="product-info"><span class="product-category">Bolos</span>
+              <h3>Chocolate Intenso</h3>
+              <p>Ganache aveludada e sabor profundo de cacau.</p>
+              <div class="product-bottom"><strong>R$ 40,00</strong><button class="btn btn-add-cart"
+                  data-product="Chocolate Intenso" data-price="40.00">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="bolos">
+            <div class="product-image"><img src="/images/bolo-maracuja.jfif" alt="Maracujá Cremoso" /></div>
+            <div class="product-info"><span class="product-category">Bolos</span>
+              <h3>Maracujá Cremoso</h3>
+              <p>Massa leve, creme de maracujá e cobertura de chocolate.</p>
+              <div class="product-bottom"><strong>R$ 38,00</strong><button class="btn btn-add-cart"
+                  data-product="Maracujá Cremoso" data-price="38.00">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="bolos">
+            <div class="product-image"><img src="/images/bolos-personalizados.jpg" alt="Bolo Personalizado" /></div>
+            <div class="product-info"><span class="product-category">Bolos</span>
+              <h3>Bolo Personalizado</h3>
+              <p>Uma criação sob medida para tornar sua celebração única.</p>
+              <div class="product-bottom"><strong>R$ 65,00</strong><button class="btn btn-add-cart"
+                  data-product="Bolo Personalizado" data-price="65.00">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="cookies">
+            <div class="product-image"><img src="/images/cookie-chocolate.jpg" alt="Cookie de Chocolate" /></div>
+            <div class="product-info"><span class="product-category">Cookies</span>
+              <h3>Cookie de Chocolate</h3>
+              <p>Crocante por fora, macio por dentro e cheio de gotas.</p>
+              <div class="product-bottom"><strong>R$ 12,00</strong><button class="btn btn-add-cart"
+                  data-product="Cookie de Chocolate" data-price="12.00">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="cookies">
+            <div class="product-image"><img src="/images/cookie-aveia-mel.jfif" alt="Aveia & Mel" /></div>
+            <div class="product-info"><span class="product-category">Cookies</span>
+              <h3>Aveia & Mel</h3>
+              <p>Uma combinação acolhedora, leve e cheia de textura.</p>
+              <div class="product-bottom"><strong>R$ 10,00</strong><button class="btn btn-add-cart"
+                  data-product="Aveia & Mel" data-price="10.00">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="cookies">
+            <div class="product-image"><img src="/images/cookie-red-velvet.jpg" alt="Cookie Red Velvet" /></div>
+            <div class="product-info"><span class="product-category">Cookies</span>
+              <h3>Cookie Red Velvet</h3>
+              <p>Cookie macio com chocolate branco e toque de baunilha.</p>
+              <div class="product-bottom"><strong>R$ 13,00</strong><button class="btn btn-add-cart"
+                  data-product="Cookie Red Velvet" data-price="13.00">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="cookies">
+            <div class="product-image"><img src="/images/cookie-castanhas.jpg" alt="Cookie de Castanhas" /></div>
+            <div class="product-info"><span class="product-category">Cookies</span>
+              <h3>Cookie de Castanhas</h3>
+              <p>Massa amanteigada com castanhas e açúcar mascavo.</p>
+              <div class="product-bottom"><strong>R$ 13,50</strong><button class="btn btn-add-cart"
+                  data-product="Cookie de Castanhas" data-price="13.50">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="chocolates">
+            <div class="product-image"><img src="/images/trufas-artesanais.jpg" alt="Trufas Artesanais" /></div>
+            <div class="product-info"><span class="product-category">Chocolates</span>
+              <h3>Trufas Artesanais</h3>
+              <p>Recheios sofisticados envolvidos em chocolate premium.</p>
+              <div class="product-bottom"><strong>R$ 25,00</strong><button class="btn btn-add-cart"
+                  data-product="Trufas Artesanais" data-price="25.00">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="chocolates">
+            <div class="product-image"><img src="/images/bombons-da-casa.jpg" alt="Bombons da Casa" /></div>
+            <div class="product-info"><span class="product-category">Chocolates</span>
+              <h3>Bombons da Casa</h3>
+              <p>Seleção de bombons com recheios cremosos e delicados.</p>
+              <div class="product-bottom"><strong>R$ 28,00</strong><button class="btn btn-add-cart"
+                  data-product="Bombons da Casa" data-price="28.00">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="chocolates">
+            <div class="product-image"><img src="/images/coracao-de-chocolate.jpg" alt="Coração de Chocolate" /></div>
+            <div class="product-info"><span class="product-category">Chocolates</span>
+              <h3>Coração de Chocolate</h3>
+              <p>Chocolate intenso em uma peça feita para presentear.</p>
+              <div class="product-bottom"><strong>R$ 22,00</strong><button class="btn btn-add-cart"
+                  data-product="Coração de Chocolate" data-price="22.00">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="chocolates">
+            <div class="product-image"><img src="/images/caixa-degustacao.jpg" alt="Caixa Degustação" /></div>
+            <div class="product-info"><span class="product-category">Chocolates</span>
+              <h3>Caixa Degustação</h3>
+              <p>Seis sabores artesanais para descobrir aos poucos.</p>
+              <div class="product-bottom"><strong>R$ 36,00</strong><button class="btn btn-add-cart"
+                  data-product="Caixa Degustação" data-price="36.00">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="docinhos">
+            <div class="product-image"><img src="/images/brigadeiro.jfif" alt="Brigadeiro Gourmet" /></div>
+            <div class="product-info"><span class="product-category">Docinhos</span>
+              <h3>Brigadeiro Gourmet</h3>
+              <p>Chocolate premium, brilho delicado e muito sabor.</p>
+              <div class="product-bottom"><strong>R$ 3,50</strong><button class="btn btn-add-cart"
+                  data-product="Brigadeiro Gourmet" data-price="3.50">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="docinhos">
+            <div class="product-image"><img src="/images/beijinho.jfif" alt="Beijinho de Coco" /></div>
+            <div class="product-info"><span class="product-category">Docinhos</span>
+              <h3>Beijinho de Coco</h3>
+              <p>Coco fresco, leite condensado e acabamento delicado.</p>
+              <div class="product-bottom"><strong>R$ 2,50</strong><button class="btn btn-add-cart"
+                  data-product="Beijinho de Coco" data-price="2.50">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="docinhos">
+            <div class="product-image"><img src="/images/coxinha doce.jfif" alt="Coxinha Doce" /></div>
+            <div class="product-info"><span class="product-category">Docinhos</span>
+              <h3>Coxinha Doce</h3>
+              <p>Massa macia com recheio cremoso e finalização artesanal.</p>
+              <div class="product-bottom"><strong>R$ 30,00</strong><button class="btn btn-add-cart"
+                  data-product="Coxinha Doce" data-price="30.00">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+          <article class="menu-item" data-category="docinhos">
+            <div class="product-image"><img src="/images/doces-personalizados.jpg" alt="Docinhos Personalizados" />
+            </div>
+            <div class="product-info"><span class="product-category">Docinhos</span>
+              <h3>Docinhos Personalizados</h3>
+              <p>Uma seleção colorida criada especialmente para sua mesa.</p>
+              <div class="product-bottom"><strong>R$ 4,50</strong><button class="btn btn-add-cart"
+                  data-product="Docinhos Personalizados" data-price="4.50">Adicionar <span>+</span></button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section order-section" id="encomendas">
+      <div class="container">
+        <div class="order-panel reveal">
+          <div>
+            <p class="eyebrow light"><span></span> feito do seu jeito</p>
+            <h2>Seu momento,<br /><i>nossa criação.</i></h2>
+            <p>Para aniversários, encontros ou aquela vontade especial: conte a sua ideia e nós transformamos em doce.
+            </p><a href="#contato" class="btn btn-light">Quero encomendar <span>↗</span></a>
+          </div>
+          <div class="steps">
+            <div class="step"><span>01</span>
+              <div>
+                <h3>Escolha</h3>
+                <p>Encontre suas delícias favoritas.</p>
+              </div>
+            </div>
+            <div class="step"><span>02</span>
+              <div>
+                <h3>Personalize</h3>
+                <p>Conte como imaginou sua mesa.</p>
+              </div>
+            </div>
+            <div class="step"><span>03</span>
+              <div>
+                <h3>Receba</h3>
+                <p>Celebramos junto com você.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> um olhar sobre nós</p>
+            <h2>Pequenos detalhes,<br /><i>grandes momentos.</i></h2>
+          </div>
+          <p>Uma seleção de criações feitas para despertar os sentidos — e vontade de provar.</p>
+        </div>
+        <div class="gallery-grid"><button class="galeria-item gallery-tall" data-lightbox="galeria"><img
+              src="/images/bolos-personalizados.jpg" alt="Bolos personalizados" /><span>Bolos
+              personalizados</span></button><button class="galeria-item" data-lightbox="galeria"><img
+              src="/images/chocolate.jpg" alt="Cupcakes de chocolate" /><span>Cupcakes de
+              chocolate</span></button><button class="galeria-item" data-lightbox="galeria"><img
+              src="/images/trufas-artesanais.jpg" alt="Trufas artesanais" /><span>Trufas
+              artesanais</span></button><button class="galeria-item gallery-wide" data-lightbox="galeria"><img
+              src="/images/doces-personalizados.jpg" alt="Doces personalizados" /><span>Doces
+              personalizados</span></button></div>
+      </div>
+    </section>
+
+    <section class="section testimonials-section" id="provas-sociais">
+      <div class="container testimonial-layout">
+        <div class="section-intro reveal">
+          <p class="eyebrow"><span></span> quem prova, conta</p>
+          <h2>Feito com carinho.<br /><i>Sentido de verdade.</i></h2>
+          <div class="rating"><strong>5.0</strong><span>★★★★★<small>mais de 100 clientes felizes</small></span></div>
+        </div>
+        <div class="testimonial reveal reveal-delay"><span class="quote-mark">“</span>
+          <blockquote>Os doces da Sweet House transformaram a nossa comemoração. Tudo estava lindo, delicado e
+            absolutamente delicioso.</blockquote>
+          <p class="author">Marina Alves <span>cliente Sweet House</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blog-section" id="blog">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> notas doces</p>
+            <h2>Do nosso caderno<br /><i>para o seu.</i></h2>
+          </div>
+          <p>Histórias, dicas e inspirações para deixar a vida mais gostosa.</p>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card"><img src="/images/cupcake.jpg" alt="Cupcakes perfeitos" />
+            <div><span class="blog-category">Receita · 5 min</span>
+              <h3>Como fazer cupcakes perfeitos em casa</h3><a href="#blog" class="text-link" data-blog="cupcakes">Ler história
+                <span>→</span></a>
+            </div>
+          </article>
+          <article class="blog-card"><img src="/images/doce-artesanal.jpg" alt="Doces artesanais" />
+            <div><span class="blog-category">Dica · 3 min</span>
+              <h3>O segredo para conservar seus doces</h3><a href="#blog" class="text-link" data-blog="conservacao">Ler história
+                <span>→</span></a>
+            </div>
+          </article>
+          <article class="blog-card"><img src="/images/identidade.jpg" alt="A história da Sweet House" />
+            <div><span class="blog-category">Nossa história · 7 min</span>
+              <h3>Onde tudo começou</h3><a href="#blog" class="text-link" data-blog="historia">Ler história <span>→</span></a>
+            </div>
+          </article>
+        </div>
+        <div class="newsletter">
+          <div>
+            <p class="eyebrow"><span></span> carta doce</p>
+            <h3>Receba um pouco de açúcar<br />na sua caixa de entrada.</h3>
+          </div>
+          <form id="newsletterForm"><label class="sr-only" for="newsletterEmail">Seu melhor email</label><input
+              id="newsletterEmail" type="email" placeholder="Seu melhor email" required /><button
+              class="btn btn-primary" type="submit">Inscrever <span>↗</span></button></form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-intro reveal">
+          <p class="eyebrow"><span></span> dúvidas frequentes</p>
+          <h2>Vamos deixar<br /><i>tudo claro.</i></h2>
+          <p>Se a sua pergunta não estiver aqui, fale com a gente.</p><a href="#contato" class="text-link">Entrar em
+            contato <span>→</span></a>
+        </div>
+        <div class="faq-container reveal reveal-delay">
+          <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Qual é o prazo de
+                entrega?</span><span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <p>O prazo é de 3 a 7 dias úteis, dependendo da disponibilidade e da complexidade do pedido.</p>
+            </div>
+          </div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Vocês fazem entregas em
+                domicílio?</span><span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <p>Sim. A taxa varia conforme a localização. Consulte-nos para combinarmos a melhor opção.</p>
+            </div>
+          </div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Posso personalizar meu
+                pedido?</span><span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <p>Sim. Adoramos criar bolos e doces personalizados para cada ocasião.</p>
+            </div>
+          </div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Quais formas de pagamento vocês
+                aceitam?</span><span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <p>Aceitamos PIX, cartão de crédito e transferência bancária.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato">
+      <div class="container contact-layout">
+        <div class="contact-copy reveal">
+          <p class="eyebrow light"><span></span> vamos conversar</p>
+          <h2>Tem uma ideia<br /><i>deliciosa?</i></h2>
+          <p>Conte para nós. Será um prazer criar algo especial para o seu momento.</p>
+          <div class="contact-details"><a href="mailto:contato@pssweethouse.com.br">contato@pssweethouse.com.br</a><a
+              href="tel:+5511987654321">(11) 98765-4321</a><span>São Paulo · SP</span></div>
+        </div>
+        <form class="contato-form reveal reveal-delay" id="contatoForm"
+          action="https://formsubmit.co/ajax/sabrina.s.oliveira13@aluno.senai.br" method="POST"><input type="hidden"
+            name="_recipient" value="sabrina.s.oliveira13@aluno.senai.br" /><input type="hidden" name="_subject"
+            value="Nova mensagem do site Sweet House" /><input type="hidden" name="_captcha" value="false" />
+          <div class="form-row"><label>Seu nome<input type="text" name="Nome" placeholder="Como podemos chamar você?"
+                required /></label><label>Email<input type="email" name="email" placeholder="seu@email.com"
+                required /></label></div>
+          <div class="form-row"><label>Telefone<input type="tel" name="Telefone"
+                placeholder="(00) 00000-0000" /></label><label>Assunto<select name="Assunto" required>
+                <option value="">Selecione uma opção</option>
+                <option>Encomenda</option>
+                <option>Dúvida</option>
+                <option>Outro</option>
+              </select></label></div><label>Mensagem<textarea name="Mensagem" rows="4"
+              placeholder="Conte um pouco sobre o que você imaginou" required></textarea></label><button
+            class="btn btn-light" type="submit">Enviar mensagem <span>↗</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="cart-modal" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <div class="cart-content">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow"><span></span> suas escolhas</p>
+          <h2 id="cartTitle">Seu carrinho</h2>
+        </div><button class="close-btn" id="closeCart" aria-label="Fechar carrinho">×</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <p class="empty-cart">Seu carrinho ainda está vazio.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div><button
+          class="btn btn-primary btn-block" id="checkoutBtn" type="button">Finalizar pedido <span>↗</span></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="chat-widget" id="chatWidget"><button class="chat-header" id="chatHeader"
+      aria-expanded="true"><span><b>♡</b> atendimento Sweet House</span><span class="chat-toggle"
+        id="chatToggle">−</span></button>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-message bot">
+        <p>Olá! Quer ajuda para escolher algo especial?</p>
+      </div>
+    </div>
+    <div class="chat-input"><label class="sr-only" for="chatInput">Mensagem</label><input type="text"
+        placeholder="Escreva uma mensagem" id="chatInput" /><button id="chatSend"
+        aria-label="Enviar mensagem">↑</button></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="#hero" aria-label="Sweet House — início">
+          <img src="/images/logo.png" alt="Sweet House" class="logo">
+        </a>
+        <p>Doces artesanais para<br />momentos que ficam.</p>
+      </div>
+      <div class="footer-links">
+        <div><span>explore</span><a href="#identidade">A casa</a><a href="#menu">Cardápio</a><a
+            href="#encomendas">Encomendas</a></div>
+        <div><span>converse</span><a href="#contato">Contato</a><a href="#faq">Dúvidas</a><a href="#blog">Notas
+            doces</a></div>
+      </div>
+      <div class="footer-social"><span>siga de perto</span><a href="#provas-sociais">Instagram ↗</a><a
+          href="#contato">WhatsApp ↗</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Sweet House. Feito com carinho.</span><span>São Paulo ·
+        Brasil</span></div>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
